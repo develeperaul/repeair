@@ -58,6 +58,9 @@ img {
 }
 
 .navbar__address {
+  font-family: "Museo300";
+  font-size: 13px;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,14 +71,18 @@ img {
 }
 
 .navbar__button {
+  font-family: "Museo700";
+  font-size: 13px;
+  font-weight: 400;
   margin-left: 30px;
 }
 
 .navbar__phone {
+  font-family: "Museo700";
   display: inline-block;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 800;
   text-decoration: none;
   margin-top: 10px;
 }
@@ -110,6 +117,7 @@ img {
 }
 
 .hero-text__title {
+  font-family: "Museo700";
   font-size: 41px;
   font-weight: 600;
   line-height: 55px;
@@ -117,6 +125,8 @@ img {
 }
 
 .hero-text__subtitle {
+  font-family: "Museo700";
+  font-weight: 400;
   display: inline-block;
   font-size: 20px;
   margin-bottom: 70px;
@@ -156,6 +166,9 @@ img {
 
 .hero-list__text {
   max-width: 300px;
+  font-family: "Museo300";
+  font-size: 14px;
+  font-weight: 400;
 }
 
 @media (max-width: 1200px) {
