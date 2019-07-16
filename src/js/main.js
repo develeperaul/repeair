@@ -1,11 +1,14 @@
-const button = document.querySelector("#button");
-const modal = document.querySelector("#modal");
-const close = document.querySelector("#close")
-button.addEventListener("click", ()=>{
-    modal.classList.add("modal_active");
-})
+$(()=>{
+    const button = $("#button");
+    const modal = $("#modal");
+    const close = $("#close");
 
-close.addEventListener("click", ()=>{
-    modal.classList.remove("modal_active")
-})
+    button.on('click', ()=>{
+        modal.addClass("modal_active");
+    });
 
+    close.on('click', ()=>{
+        modal.removeClass("modal_active")
+    })
+
+})
