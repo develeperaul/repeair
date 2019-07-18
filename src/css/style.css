@@ -1,3 +1,21 @@
+@-webkit-keyframes slideRight {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 400px;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: 400px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -52,6 +70,7 @@ img {
   text-align: center;
   font-family: "Museo700";
   font-size: 24px;
+  max-width: 500px;
 }
 
 .section-subtitle {
@@ -274,7 +293,6 @@ img {
 
 .offer__title {
   text-align: left;
-  max-width: 500px;
   line-height: 35px;
   margin-bottom: 24px;
 }
@@ -393,6 +411,107 @@ img {
   margin: auto;
 }
 
+.price__image {
+  display: block;
+}
+
+.price__card {
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.price__title {
+  margin: auto;
+  margin-bottom: 58px;
+}
+
+.price__subtitle {
+  margin-bottom: 59px;
+  display: block;
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.card:hover .card__image:before {
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.card__text {
+  padding: 40px;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+}
+
+.card__link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  display: inline-block;
+  font-family: "Museo300";
+  font-weight: 600;
+  position: relative;
+}
+
+.card__link:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  display: block;
+  width: 100%;
+  z-index: -1;
+  height: 3px;
+  background-color: #ffd200;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.card__link:hover:after {
+  height: 12px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -423,5 +542,11 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.black {
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
